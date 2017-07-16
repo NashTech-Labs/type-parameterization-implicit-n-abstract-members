@@ -1,4 +1,4 @@
-package com.knoldus.kip.examples
+package com.knoldus.kip.examples.typeparamerization
 
 class NoVariantQueue[T](//Non variant , Invariant
                         private val leading: List[T],

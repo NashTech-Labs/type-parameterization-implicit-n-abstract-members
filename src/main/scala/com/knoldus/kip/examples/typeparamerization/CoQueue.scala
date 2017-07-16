@@ -1,6 +1,4 @@
-package com.knoldus.kip.examples
-
-
+package com.knoldus.kip.examples.typeparamerization
 
 //Covariant
 class CoQueue[+T](//covariant

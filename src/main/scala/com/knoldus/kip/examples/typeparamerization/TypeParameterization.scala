@@ -1,5 +1,4 @@
-package com.knoldus.kip.examples
-
+package com.knoldus.kip.examples.typeparamerization
 
 //Information Hiding
 class Queue[T] private(

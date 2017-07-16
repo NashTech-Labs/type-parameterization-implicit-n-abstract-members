@@ -1,4 +1,4 @@
-package com.knoldus.kip.examples
+package com.knoldus.kip.examples.typeparamerization
 
 //Contravariant
 class ContraQueue[-T] {
