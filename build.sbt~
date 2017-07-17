@@ -1,4 +1,4 @@
-name := "type-parameterization-implicit-n-abstract-members"
+name := "type-parameterization"
 
 version := "1.0"
 

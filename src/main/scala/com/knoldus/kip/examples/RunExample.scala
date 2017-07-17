@@ -18,8 +18,8 @@ import com.knoldus.kip.examples.typeparamerization._
 
 //object RunExample extends AllAbstractApplicatioin with App {}
 
-//object RunExample extends ImplicitCoversionApplication with App {}
+object RunExample extends ImplicitCoversionApplication with App {}
 
 //object RunExample extends ImplicitParamApplication with App {}
 
-object RunExample extends ImplicitClassApplication with App {}
+//object RunExample extends ImplicitClassApplication with App {}

@@ -1,6 +1,14 @@
 package com.knoldus.kip.examples.typeparamerization
 
-trait UpperQueue{
+trait SuperQueue{
+  def isOk(input: String): Boolean
+}
+
+class SuperImpl extends SuperQueue{
+  override def isOk(input: String): Boolean = input == "ok"
+}
+
+trait UpperQueue extends SuperQueue{
 
   def isOk(input: String): Boolean
 
@@ -8,6 +16,14 @@ trait UpperQueue{
 
 trait UpperQueueTrue extends UpperQueue {
   def isOk(input: String): Boolean
+}
+
+trait LowestQueue extends UpperQueueTrue{
+  def isOk(input: String): Boolean
+}
+
+class LowestImpl extends SuperQueue{
+  override def isOk(input: String): Boolean = input == "ok"
 }
 
 class UpperQueueTrueImpl extends UpperQueueTrue {
@@ -34,9 +50,11 @@ trait UpperQueueApplication {
 //  println(isUpperQueueReallyOk(List(uqt,uqf2), "ok")) //Doesn't Works
 
 
+  val lowest = new LowestImpl
+  val superIm = new SuperImpl
   //  def isLowerUpperMixWorks[T >: UpperQueueTrue](qs: List[T], input: String) = qs.map(_.isOk(input)) //Doesn't work
   def isLowerUpperMixWorks[T >: UpperQueueTrue <: UpperQueue](qs: List[T], input: String) = qs.map(_.isOk(input)) //Works
 //    println(isLowerUpperMixWorks(List(uqt,uqf), "ok")) //Works
 //    println(isLowerUpperMixWorks(List(uqt,uqf, greedy), "ok")) //Works
-
+//      println(isLowerUpperMixWorks(List(superIm))) //Doesn't work
 }
