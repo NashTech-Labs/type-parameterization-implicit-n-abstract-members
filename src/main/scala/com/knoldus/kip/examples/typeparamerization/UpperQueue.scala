@@ -57,4 +57,5 @@ trait UpperQueueApplication {
 //    println(isLowerUpperMixWorks(List(uqt,uqf), "ok")) //Works
 //    println(isLowerUpperMixWorks(List(uqt,uqf, greedy), "ok")) //Works
 //      println(isLowerUpperMixWorks(List(superIm))) //Doesn't work
+//      println(isLowerUpperMixWorks(List(lowest))) //Doesn't work
 }
