@@ -10,7 +10,7 @@ import com.knoldus.kip.examples.typeparamerization._
 
 //object RunExample extends ContraQueueApplication with App {}
 
-//object RunExample extends LowerQueueApplication with App {}
+object RunExample extends LowerQueueApplication with App {}
 
 //object RunExample extends UpperQueueApplication with App {}
 
@@ -18,7 +18,7 @@ import com.knoldus.kip.examples.typeparamerization._
 
 //object RunExample extends AllAbstractApplicatioin with App {}
 
-object RunExample extends ImplicitCoversionApplication with App {}
+//object RunExample extends ImplicitCoversionApplication with App {}
 
 //object RunExample extends ImplicitParamApplication with App {}
 
